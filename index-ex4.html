@@ -3,23 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo de Adivinhação</title>
-    <link rel="stylesheet" href="style-ex4.css">
-</head>
+    <title>Contador com While</title>
+    <link rel="stylesheet" href="style-ex4.css"> </head>
 <body>
-
     <div class="container">
-        <h1>Adivinhe o Número Secreto!</h1>
-        <p>Estou pensando em um número entre 1 e 10. Qual é o seu palpite?</p>
-        
-        <label for="palpiteInput">Seu Palpite:</label>
-        <input type="number" id="palpiteInput" min="1" max="10">
-        
-        <button id="verificarBtn" onclick="verificarPalpite()">Verificar</button>
-        <button id="novo-jogo" onclick="novoJogo()" style="display: none;">Novo Jogo</button>
-        
-        <p id="resultado"></p>
+        <h1>Lista de Números</h1>
+
+        <p>Digite um número para iniciar a lista:</p>
+        <input type="number" id="numeroInput" value="10">
+        <button id="iniciarContagemBtn">Iniciar Lista</button>
+
+        <div id="resultado"></div>
     </div>
+
+    <script src="ex4.js"></script>
 </body>
-<script src="ex4.js"></script>
+
 </html>

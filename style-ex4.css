@@ -15,6 +15,7 @@ body {
     height: 100vh;
 }
 
+/* Container central */
 .container {
     background-color: #fff;
     padding: 30px 40px;
@@ -32,28 +33,23 @@ h1 {
 }
 
 p {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-size: 1rem;
-}
-
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 8px;
 }
 
 input[type="number"] {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 1rem;
+    margin-bottom: 20px;
 }
 
 button {
     padding: 10px 20px;
-    margin: 5px;
+    background-color: #007bff;
+    color: white;
     border: none;
     border-radius: 5px;
     font-size: 1rem;
@@ -61,22 +57,8 @@ button {
     transition: background-color 0.3s ease;
 }
 
-#verificarBtn {
-    background-color: #007bff;
-    color: white;
-}
-
-#verificarBtn:hover {
+button:hover {
     background-color: #0056b3;
-}
-
-#novo-jogo {
-    background-color: #28a745;
-    color: white;
-}
-
-#novo-jogo:hover {
-    background-color: #218838;
 }
 
 #resultado {
