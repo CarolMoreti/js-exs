@@ -1,13 +1,17 @@
-let num = document.getElementById('num');
+function verificarNumero() {
+            let numElement = document.getElementById('num');
+            let resultadoElement = document.getElementById('resultado');
+            let num = Number(numElement.value);
+            let mensagem = "";
 
-num = Number(num);
-if(num<10){
-    console.log(num);
-    console.log("número antes do 10");
-} else if (num<20){
-    console.log(num);
-    console.log("número antes de 20, depois de 10");
-}else{
-    console.log(num);
-    console.log("número maior que 20");
-};
+            if (num < 100) {
+                mensagem = "O número " + num + " é antes do 100.";
+            } else if (num < 200) {
+                mensagem = "O número " + num + " é antes do 200, depois do 100.";
+            } else {
+                mensagem = "O número " + num + " é maior ou igual a 200.";
+            }
+            
+            resultadoElement.textContent = mensagem;
+            numElement.value = "";
+        }
